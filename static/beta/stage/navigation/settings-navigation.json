@@ -69,11 +69,13 @@
                     "permissions": [
                       {
                         "method": "loosePermissions",
-                          "args": [
-                            [
-                              "integrations:*:*",
-                              "integrations:endpoints:write"
-                            ]
+                        "args": [
+                          [
+                            "integrations:*:*",
+                            "integrations:endpoints:read",
+                            "notifications:*:*",
+                            "notifications:notifications:write"
+                          ]
                         ]
                       }
                     ]
