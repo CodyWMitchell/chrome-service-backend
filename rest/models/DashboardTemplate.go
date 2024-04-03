@@ -197,17 +197,24 @@ type BaseTemplates map[AvailableTemplates]BaseDashboardTemplate
 type WidgetIcons string
 
 const (
-	BellIcon WidgetIcons = "BellIcon"
-	StarIcon WidgetIcons = "StarIcon"
+	BellIcon             WidgetIcons = "BellIcon"
+	HistoryIcon          WidgetIcons = "HistoryIcon"
+	OutlinedBookmarkIcon WidgetIcons = "OutlinedBookmarkIcon"
+	RocketIcon           WidgetIcons = "RocketIcon"
+	StarIcon             WidgetIcons = "StarIcon"
+	RhelIcon             WidgetIcons = "RhelIcon"
+	OpenshiftIcon        WidgetIcons = "OpenshiftIcon"
+	EdgeIcon             WidgetIcons = "EdgeIcon"
+	AnsibleIcon          WidgetIcons = "AnsibleIcon"
 )
 
 func (wi WidgetIcons) IsValid() error {
 	switch wi {
-	case BellIcon, StarIcon:
+	case BellIcon, OutlinedBookmarkIcon, RocketIcon, StarIcon, RhelIcon, OpenshiftIcon, EdgeIcon, AnsibleIcon:
 		return nil
 	}
 
-	return fmt.Errorf("invalid widget icon. Expected one of %s, %s, got %s", BellIcon, StarIcon, wi)
+	return fmt.Errorf("invalid widget icon. Expected one of %s, %s, %s, %s, %s, %s, %s, %s, %s, got %s", BellIcon, HistoryIcon, OutlinedBookmarkIcon, RocketIcon, StarIcon, RhelIcon, OpenshiftIcon, EdgeIcon, AnsibleIcon, wi)
 }
 
 type WidgetHeaderLink struct {

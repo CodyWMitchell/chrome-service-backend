@@ -67,32 +67,48 @@ var (
 					Title: "View all learning resources",
 					Href:  "/settings/learning-resources#documentation",
 				},
+				Icon: models.OutlinedBookmarkIcon,
 			},
 		},
 		models.ExploreCapabilities: models.ModuleFederationMetadata{
 			Scope:    "landing",
 			Module:   "./ExploreCapabilities",
 			Defaults: models.BaseWidgetDimensions.InitDimensions(models.BaseWidgetDimensions{}, 2, 2, 4, 1),
+			Config: models.WidgetConfiguration{
+				Icon: models.RocketIcon,
+			},
 		},
 		models.Edge: models.ModuleFederationMetadata{
 			Scope:    "landing",
 			Module:   "./EdgeWidget",
 			Defaults: models.BaseWidgetDimensions.InitDimensions(models.BaseWidgetDimensions{}, 2, 2, 4, 1),
+			Config: models.WidgetConfiguration{
+				Icon: models.EdgeIcon,
+			},
 		},
 		models.Ansible: models.ModuleFederationMetadata{
 			Scope:    "landing",
 			Module:   "./AnsibleWidget",
 			Defaults: models.BaseWidgetDimensions.InitDimensions(models.BaseWidgetDimensions{}, 2, 2, 4, 1),
+			Config: models.WidgetConfiguration{
+				Icon: models.AnsibleIcon,
+			},
 		},
 		models.Rhel: models.ModuleFederationMetadata{
 			Scope:    "landing",
 			Module:   "./RhelWidget",
 			Defaults: models.BaseWidgetDimensions.InitDimensions(models.BaseWidgetDimensions{}, 2, 2, 4, 1),
+			Config: models.WidgetConfiguration{
+				Icon: models.RhelIcon,
+			},
 		},
 		models.Openshift: models.ModuleFederationMetadata{
 			Scope:    "landing",
 			Module:   "./OpenShiftWidget",
 			Defaults: models.BaseWidgetDimensions.InitDimensions(models.BaseWidgetDimensions{}, 2, 2, 4, 1),
+			Config: models.WidgetConfiguration{
+				Icon: models.OpenshiftIcon,
+			},
 		},
 	}
 )
